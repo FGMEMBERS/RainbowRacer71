@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <author>BARANGER Emmanuel</author>
+    <status>alpha</status>
+
+    <fuel-fraction>1.0</fuel-fraction>
+
+    <sound>
+      <audible>true</audible>
+      <path>Aircraft/RainbowRacer71/Sounds/rr71-sound.xml</path>
+    </sound>
+
+    <model>
+      <path>Aircraft/RainbowRacer71/Models/rr71.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <startup>
+      <splash-texture>Aircraft/RainbowRacer71/rr71-splash.png</splash-texture>
+    </startup>
+
+    <virtual-cockpit archive="y">true</virtual-cockpit>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>rr71</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+    </help>
+
+    <menubar include="Dialogs/rr71-menu.xml"/>
+
+  </sim>
+
+  <consumables>
+    <fuel>
+      <tank n="0">
+        <tank-num type="int">0</tank-num>
+        <level-gal_us archive="y">2070</level-gal_us>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <input>
+    <keyboard include="Nasal/rr71-keyboard.xml"/>
+  </input>
+
+  <nasal>
+    <rr71>
+      <file>Aircraft/RainbowRacer71/Nasal/doors.nas</file>
+      <file>Aircraft/RainbowRacer71/Nasal/liveries.nas</file>
+      <file>Aircraft/RainbowRacer71/Nasal/immat.nas</file>
+      <file>Aircraft/RainbowRacer71/Nasal/light.nas</file>
+    </rr71>
+  </nasal>
+
+</PropertyList>
